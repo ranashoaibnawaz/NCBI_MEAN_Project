@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <h2 class="h2text">ALL DOG DATA</h2>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Animal Type ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Avg. Life</th>
+        <th scope="col">Avg. Size</th>
+        <th scope="col">Common Color</th>
+        <th scope="col">Hair Color</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr scope="row" *ngFor="let breed of dog">
+        <td>{{ breed.id }}</td>
+        <td>{{ breed.animal_type_id }}</td>
+        <td>{{ breed.name }}</td>
+        <td>{{ breed.avg_life }}</td>
+        <td>{{ breed.avg_size }}</td>
+        <td>{{ breed.common_color }}</td>
+        <td>{{ breed.hair_color }}</td>
+        <td><button  class="btn btn-danger" (click)="deleteBreeds(breed.id)">Delete</button></td>
+    </tbody>
+  </table>
+</div>

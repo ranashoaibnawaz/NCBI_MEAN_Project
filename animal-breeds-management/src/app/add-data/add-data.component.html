@@ -1,0 +1,48 @@
+<div class="container-fluid">
+<form action="" [formGroup]="addData" (ngSubmit)="postBreeds()">
+<div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect01" class="btn btn-danger">Name</label>
+    <select formControlName="pet_name" class="form-select" id="inputGroupSelect01" >
+      <option selected>Choose...</option>
+      <option value="American Shorthair">American Shorthair</option>
+      <option value="Bulldog">Bulldog</option>
+      <option value="Canary">Canary</option>
+    </select>
+  </div>
+  
+  <div class="input-group mb-3">
+    <select formControlName="average_life" class="form-select" id="inputGroupSelect02" class="btn btn-primary">
+      <option selected>Average_Life</option>
+      <option value="10">10</option>
+      <option value="5">15</option>
+      <option value="20">20</option>
+    </select>
+    <select formControlName="animal_type_id" class="form-select" id="inputGroupSelect02" class="btn btn-secondary">
+      <option selected>animal_type_id</option>
+      <option value="1">birds</option>
+      <option value="2">dogs</option>
+      <option value="3">cats</option>
+    </select>
+    <select formControlName="average_size"  class="form-select" id="inputGroupSelect02" class="btn btn-success">
+        <option selected>Average Size</option>
+        <option value="Large">Large</option>
+        <option value="Medium">Medium</option>
+        <option value="Small">Small</option>
+      </select>
+      <select formControlName="common_color" class="form-select" id="inputGroupSelect02" class="btn btn-warning">
+        <option selected>Common Color</option>
+        <option value="White">White</option>
+        <option value="Orange">Orange</option>
+        <option value="Blue">Blue</option>
+      </select>
+      <select formControlName="hair_color" class="form-select" id="inputGroupSelect02" class="btn btn-info">
+        <option selected>Hair Color</option>
+        <option value="Pink">Pink</option>
+        <option value="Red">Red</option>
+        <option value="Brown">Brown</option>
+      </select>
+    
+  </div>
+  <Button class="btn btn-danger">Submit</Button>
+</form>
+</div>
